@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
@@ -41,4 +41,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn -B sonar:sonar
+      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=rahmahaisyah-1 -Dsonar.projectKey=rahmahaisyah_latihan-mkepl
