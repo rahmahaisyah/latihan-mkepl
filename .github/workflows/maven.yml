@@ -22,4 +22,7 @@ jobs:
         cache: maven
 
     - name: Continous Integration (Compile & Test)
-      run: mvn -B clean compile 
+      run: mvn -B clean compile
+
+    - name: Continous Testing (Unit Test)
+      run: mvn -B test 
