@@ -16,6 +16,10 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
  </properties>
+
+ <sonar.projectKey>rahmahaisyah_latihan-mkepl</sonar.projectKey>
+ <sonar.organization>rahmahaisyah</sonar.organization>
+ <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   
 </project>
 
